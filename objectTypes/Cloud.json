@@ -1,0 +1,77 @@
+{
+	"name": "Cloud",
+	"plugin-id": "Sprite",
+	"sid": 593963789581193,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 128165020683844
+		},
+		{
+			"behaviorId": "wrap",
+			"name": "Wrap",
+			"sid": 734937783395549
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 15,
+						"originX": 0.47058823529411764,
+						"originY": 0.5333333333333333,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2834063,
+						"collisionPoly": {
+							"points": [
+								0.6764705882352943,
+								0.13333333333333333,
+								1,
+								0.13333333333333333,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								0.14705882352941177,
+								1,
+								0.029411764705882353,
+								1,
+								0.17647058823529413,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 738692152974603,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

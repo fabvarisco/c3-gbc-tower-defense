@@ -1,7 +1,7 @@
 {
-	"name": "EnemyEntity",
+	"name": "XpEntity",
 	"plugin-id": "Sprite",
-	"sid": 293013012222502,
+	"sid": 704868924575662,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,25 +12,25 @@
 			{
 				"frames": [
 					{
-						"width": 18,
-						"height": 17,
-						"originX": 0.4444444444444444,
-						"originY": 0.47058823529411764,
+						"width": 17,
+						"height": 18,
+						"originX": 0.5294117647058824,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9618440,
+						"imageSpriteId": 476584,
 						"collisionPoly": {
 							"points": [
-								0.05555555555555555,
 								0.058823529411764705,
-								0.9430199430199431,
-								0.06033182503770739,
-								0.943019943019943,
-								0.9381598793363501,
-								0.04843304843304842,
-								0.9396681749622928
+								0.05555555555555555,
+								1,
+								0.05555555555555555,
+								1,
+								1,
+								0.058823529411764705,
+								1
 							]
 						},
 						"useCollisionPoly": true,
@@ -38,7 +38,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 445616654843104,
+				"sid": 471599413322993,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

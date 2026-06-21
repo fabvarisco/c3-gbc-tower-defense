@@ -1,7 +1,7 @@
 {
-	"name": "CustomButton",
+	"name": "Hitbox",
 	"plugin-id": "Sprite",
-	"sid": 677939706981533,
+	"sid": 280317014206579,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1268157,
+						"imageSpriteId": 1201146,
 						"collisionPoly": {
 							"points": [
 								0.05555555555555555,
@@ -38,7 +38,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 274474159311725,
+				"sid": 530728399654059,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

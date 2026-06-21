@@ -71,7 +71,7 @@
 					"locked": false,
 					"world": {
 						"x": 95,
-						"y": 137,
+						"y": 128,
 						"width": 120,
 						"height": 120,
 						"originX": 0.5,
@@ -88,7 +88,7 @@
 					}
 				},
 				{
-					"type": "Tilemap",
+					"type": "GameTilemap",
 					"properties": {
 						"initially-visible": true,
 						"tile-width": 16,
@@ -148,61 +148,44 @@
 					}
 				},
 				{
-					"type": "EnemyEntity",
+					"type": "CoinText",
 					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 5,
-					"sid": 862322701916155,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 141,
-						"y": 71,
-						"width": 18,
-						"height": 17,
-						"originX": 0.4444444444444444,
-						"originY": 0.47058823529411764,
+						"text": "Text",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
 						"color": [
-							1,
-							1,
-							1,
+							0,
+							0,
+							0,
 							1
 						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "CustomButton",
-					"properties": {
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 3,
-					"sid": 660779566485926,
+					"sid": 491199795722760,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 10,
-						"y": 110,
-						"width": 18,
-						"height": 18,
-						"originX": 0.4444444444444444,
-						"originY": 0.4444444444444444,
+						"x": 0,
+						"y": 0,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

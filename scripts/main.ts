@@ -1,29 +1,35 @@
-
-// Import any other script files here, e.g.:
-// import * as myModule from "./mymodule.js";
-
 import GameManager from "./GameManager.js";
+import TitleManager from "./TitleManager.js";
+import PlayerManager from "./PlayerManager.js";
 
 runOnStartup(async runtime =>
 {
-	// Code to run on the loading screen.
-	// Note layouts, objects etc. are not yet available.
-	
 	runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime));
 });
 
 async function OnBeforeProjectStart(runtime: IRuntime)
 {
-	// Code to run just before 'On start of layout' on
-	// the first layout. Loading has finished and initial
-	// instances are created and available to use here.
+	(globalThis as any).playerManager = new PlayerManager();
 
-	const gameManager = new GameManager(runtime);
-	runtime.addEventListener("tick", () => Tick(runtime));
+	runtime.addEventListener("beforeanylayoutstart", () => OnLayoutStart(runtime));
 }
 
-function Tick(runtime: IRuntime)
+function OnLayoutStart(runtime: IRuntime)
 {
-	
+	const layoutName = runtime.layout.name;
 
+	if ((globalThis as any).titleManager) {
+		(globalThis as any).titleManager.destroy();
+		(globalThis as any).titleManager = null;
+	}
+	if ((globalThis as any).gameManager) {
+		(globalThis as any).gameManager.destroy();
+		(globalThis as any).gameManager = null;
+	}
+
+	if (layoutName === "Title") {
+		(globalThis as any).titleManager = new TitleManager(runtime);
+	} else if (layoutName === "Game") {
+		(globalThis as any).gameManager = new GameManager(runtime);
+	}
 }

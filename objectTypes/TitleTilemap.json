@@ -1,7 +1,7 @@
 {
-	"name": "Tilemap",
+	"name": "TitleTilemap",
 	"plugin-id": "Tilemap",
-	"sid": 994897846766576,
+	"sid": 166124671598281,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,7 +9,7 @@
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 630600361318116
+			"sid": 154323211514917
 		}
 	],
 	"effectTypes": [],
@@ -22,7 +22,7 @@
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 4489141,
+		"imageSpriteId": 9154273,
 		"useCollisionPoly": true,
 		"tag": ""
 	},
