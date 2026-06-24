@@ -1,0 +1,60 @@
+{
+	"name": "GameEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 777234165040090,
+					"parameters": {
+						"first-value": "MouseEntity.X",
+						"comparison": 4,
+						"second-value": "Camera.X + (ViewportWidth(\"Main\") * 0.5)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Camera",
+					"sid": 466060792730101,
+					"parameters": {
+						"x": "MouseEntity.X - (ViewportWidth(\"Main\") * 0.5)",
+						"y": "MouseEntity.Y"
+					}
+				}
+			],
+			"sid": 454795739312989
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 115829454715643,
+					"parameters": {
+						"first-value": "MouseEntity.X",
+						"comparison": 2,
+						"second-value": "Camera.X - (ViewportWidth(\"Main\") * 0.5)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Camera",
+					"sid": 262788150775722,
+					"parameters": {
+						"x": "MouseEntity.X + (ViewportWidth(\"Main\") * 0.5)",
+						"y": "MouseEntity.Y"
+					}
+				}
+			],
+			"sid": 781915469870307
+		}
+	],
+	"sid": 149428661456838
+}

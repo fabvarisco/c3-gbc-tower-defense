@@ -29,7 +29,7 @@ function OnLayoutStart(runtime: IRuntime)
 
 	if (layoutName === "Title") {
 		(globalThis as any).titleManager = new TitleManager(runtime);
-	} else if (layoutName === "Game") {
+	} else if (layoutName.includes("Game")) {
 		(globalThis as any).gameManager = new GameManager(runtime);
 	}
 }

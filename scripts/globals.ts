@@ -28,4 +28,13 @@ export interface IPlayer {
     }
 }
 
+export type EntityMap = {
+    [key: string]: IEntityStats;
+}
+
+
+export type Team = "hero" | "enemy";
+
+export type PortalTypes = InstanceType.PlayerPortal | InstanceType.EnemyPortal;
+
 export type PickupTypes = InstanceType.CoinEntity | InstanceType.XpEntity;

@@ -1,0 +1,10 @@
+{
+	"name": "ReturnTitleText",
+	"plugin-id": "Text",
+	"sid": 809202698673514,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,12 +1,23 @@
 {
-	"name": "3DShape",
+	"name": "EnemyPortal",
 	"plugin-id": "Shape3D",
-	"sid": 609697561385468,
+	"sid": 469307975540124,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
-	"effectTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 300211807367935
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "pulse",
+			"name": "Pulse"
+		}
+	],
 	"animations": {
 		"items": [
 			{
@@ -20,7 +31,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5058149,
+						"imageSpriteId": 7300996,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -34,7 +45,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1947919,
+						"imageSpriteId": 7479552,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -48,7 +59,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7711958,
+						"imageSpriteId": 5670014,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -62,7 +73,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3898218,
+						"imageSpriteId": 1844105,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -76,7 +87,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9302395,
+						"imageSpriteId": 8484194,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -90,13 +101,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2741079,
+						"imageSpriteId": 3258155,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 519399877373449,
+				"sid": 383999913220627,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

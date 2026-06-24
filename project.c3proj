@@ -15,6 +15,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Shape3D",
 			"name": "3D shape",
 			"author": "Scirra",
@@ -50,6 +57,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
@@ -57,8 +71,29 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -75,13 +110,20 @@
 			"name": "Wrap",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "pulse",
+			"name": "Pulse",
+			"author": "Danguafer/Silexars",
+			"bundled": false
 		}
 	],
 	"uniqueId": "bd8d6xe746j",
 	"objectTypes": {
 		"items": [
 			"GameTilemap",
-			"3DShape",
+			"PlayerPortal",
 			"Entity",
 			"CustomButtonEntity",
 			"MouseEntity",
@@ -93,10 +135,20 @@
 			"XpEntity",
 			"TitleTilemap",
 			"Cloud",
-			"TiledBackground",
+			"SkyBkg",
 			"StartGameText",
 			"Frame",
-			"StageNumberText"
+			"StageNumberText",
+			"ShopText",
+			"MenuBkg",
+			"Camera",
+			"EnemyPortal",
+			"LocalStorage",
+			"GameOverText",
+			"ReturnTitleText",
+			"Text",
+			"SettingsInfoText",
+			"HeroFrame"
 		],
 		"subfolders": []
 	},
@@ -117,12 +169,18 @@
 	"layouts": {
 		"items": [
 			"Title",
-			"Game"
+			"Game_1",
+			"GameOver",
+			"Settings",
+			"SelectController",
+			"Shop"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
-		"items": [],
+		"items": [
+			"GameEvents"
+		],
 		"subfolders": []
 	},
 	"rootFileFolders": {
@@ -212,6 +270,30 @@
 					"name": "PlayerManager.ts",
 					"type": "application/typescript",
 					"sid": 880642262068489,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Entities.ts",
+					"type": "application/typescript",
+					"sid": 329647181056646,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PortalController.ts",
+					"type": "application/typescript",
+					"sid": 818178742449358,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "HeroFrameController.ts",
+					"type": "application/typescript",
+					"sid": 209532360774328,
 					"script-info": {
 						"purpose": "none"
 					}

@@ -1,5 +1,7 @@
 // entityController.ts
 
+import {IEntityStats} from "./globals.js";
+
 enum States {
     default = "default",
     click = "walk",
@@ -7,8 +9,6 @@ enum States {
     active = "hit",
     disabled = "disabled"
 }
-
-
 
 class CustomButtonController {
     private inst: InstanceType.CustomButtonEntity;
@@ -42,8 +42,6 @@ class CustomButtonController {
             this.activeTimer = 0;
             this.state = States.default;
         }
-
-
     }
 
     onClick(eventName:string):void {
@@ -53,8 +51,8 @@ class CustomButtonController {
         this.state = States.active;
     }
 
-    spawnHero(){
-        (globalThis as any).gameManager.spawnHero(10, 60);
+    spawnHero(selectedHero:IEntityStats){
+        (globalThis as any).gameManager.spawnHero(selectedHero);
     }
 
     checkCollision(entity: InstanceType.MouseEntity): boolean {

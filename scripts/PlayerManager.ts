@@ -1,7 +1,8 @@
 
-import {IPlayer} from "./globals.js";
+import {IPlayer, IEntityStats} from "./globals.js";
 
 class PlayerManager {
+    public selectedHero: IEntityStats | null = null; 
     private player: IPlayer = {
         coins: 0,
         powerUps: [],
@@ -14,7 +15,7 @@ class PlayerManager {
             normal: false,
             hard: false,
             endless: false,
-        }
+        },
     };
 
     constructor(){

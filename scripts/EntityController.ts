@@ -1,6 +1,6 @@
 // entityController.ts
 
-import {IEntityStats} from "./globals.js"
+import {IEntityStats, Team, PortalTypes } from "./globals.js"
 
 
 enum States {
@@ -10,12 +10,9 @@ enum States {
     dead = "dead"
 }
 
-type Team = "hero" | "enemy";
-
-
 
 class EntityController {
-    private inst: InstanceType.Entity;
+    private inst: InstanceType.Entity; 
     private isDead: boolean = false;
     private animations: string[] = [];
     private _state = States.walk;
@@ -87,16 +84,15 @@ class EntityController {
         }
 
         this.hashState[this._state](dt);
-
-
     }
 
-    checkCollision(entity: InstanceType.Entity): boolean {
+    checkCollision(entity: InstanceType.Entity | PortalTypes): boolean {
+        console.log(entity.templateName)
         if (this.isDead) return false;
         return this.inst.testOverlap(entity);
     }
 
-    onHitEntity(entity: InstanceType.Entity): void {
+    onHitEntity(entity: InstanceType.Entity | PortalTypes ): void {
         if (this._state === States.attack) return;
 
         this.state = States.attack; 

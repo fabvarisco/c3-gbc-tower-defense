@@ -1,20 +1,15 @@
 {
-	"name": "CustomButtonEntity",
+	"name": "Camera",
 	"plugin-id": "Sprite",
-	"sid": 677939706981533,
+	"sid": 459658219477248,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Anchor",
-			"name": "Anchor",
-			"sid": 580275661122557
-		},
-		{
-			"behaviorId": "Pin",
-			"name": "Pin",
-			"sid": 150262758509452
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 404731771849469
 		}
 	],
 	"effectTypes": [],
@@ -25,13 +20,13 @@
 					{
 						"width": 18,
 						"height": 18,
-						"originX": 0.4444444444444444,
-						"originY": 0.4444444444444444,
+						"originX": 7,
+						"originY": 7,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1268157,
+						"imageSpriteId": 7875713,
 						"collisionPoly": {
 							"points": [
 								0.05555555555555555,
@@ -49,7 +44,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 274474159311725,
+				"sid": 795412809125150,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

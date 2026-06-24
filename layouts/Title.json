@@ -42,7 +42,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "TiledBackground",
+					"type": "SkyBkg",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -70,8 +70,8 @@
 					"world": {
 						"x": -2.950763076421012,
 						"y": -2.143775313969833,
-						"width": 326.1440665833969,
-						"height": 292.7034556060705,
+						"width": 162.14406658339692,
+						"height": 144.70345560607052,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -425,8 +425,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 35.31337356567383,
-						"y": 86.04281899620156,
+						"x": 36.546329498291016,
+						"y": 52.729819270859764,
 						"width": 84.40453361793709,
 						"height": 17.395796166087152,
 						"originX": 0,
@@ -474,12 +474,107 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -19.703033447265625,
-						"y": -4.761868476867676,
-						"width": 200,
-						"height": 68.82906809087422,
+						"x": -1.5323741673686584,
+						"y": 0.3632078170776367,
+						"width": 161.09615256740008,
+						"height": 44.135608043834736,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "ShopText",
+					"properties": {
+						"text": "Shop",
+						"enable-bbcode": true,
+						"font": "Not Jam Mono Prophet 8",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 15,
+					"sid": 659602221834881,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 42.05893516540527,
+						"y": 88.27897644042969,
+						"width": 66.5155414438338,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "HeroFrame",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 35,
+					"sid": 681855715892133,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Pulse": {
+							"isEnabled": false,
+							"parameters": {
+								"intensity": 1,
+								"lighting": 0.5,
+								"speed": 10,
+								"frequency": 30,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 221.4615020751953,
+						"y": 33.79732894897461,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
